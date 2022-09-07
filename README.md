@@ -1,26 +1,23 @@
-# Ansible - Development
+# Ansible Development
 
 Information on developing Ansible modules, plugins and much more.
 
 ## Overview
 
-Note the release schedule for Ansible if you are intending to fix a bug or add a feature or new module to a specific Ansible version. [Ansible Release Roadmaps](https://docs.ansible.com/ansible/devel/roadmap/)
-
-For general help, use this guide: [Ansible - Developer Guide](https://docs.ansible.com/ansible/latest/dev_guide/index.html)
-
-For shorter information use this [guide](https://tannerjc.net/wiki/index.php?title=Ansible_Developer_Filament) from tannerjc.
+Note the [Ansible Release Roadmaps](https://docs.ansible.com/ansible/devel/roadmap/) for Ansible if you are intending to fix a bug or add a feature or new module to a specific Ansible version. For general help, use this guide: [Ansible - Developer Guide](https://docs.ansible.com/ansible/latest/dev_guide/index.html)
 
 ## Development Environment
 
-First, let's prepare our python development environment. Using `pyenv`:
+First, let's prepare our python development environment using `pyenv`:
 
 ```shell
-# List available Python versions
-pyenv install --list | grep 3.8
+# List latest available Python version
+pyenv install --list | grep --extended-regexp "^\s*[0-9][0-9.]*[0-9]\s*$" | tail -1
 # Install latest Python version
-pyenv install 3.8.2
-# Create virtual environment for your Ansible development
-pyenv 
+pyenv install --skip-existing $(pyenv install --list | grep --extended-regexp "^\s*[0-9][0-9.]*[0-9]\s*$" | tail -1)
+# Create virtual environment for our ansible tools
+pyenv virtualenv ansible
+pyenv activate ansible
 ```
 
 Next, let's **fork** the Ansible project:
