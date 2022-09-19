@@ -16,8 +16,8 @@ pyenv install --list | grep --extended-regexp "^\s*[0-9][0-9.]*[0-9]\s*$" | tail
 # Install latest Python version
 pyenv install --skip-existing $(pyenv install --list | grep --extended-regexp "^\s*[0-9][0-9.]*[0-9]\s*$" | tail -1)
 # Create virtual environment for our ansible tools
-pyenv virtualenv ansible
-pyenv activate ansible
+pyenv virtualenv ansible-development
+pyenv activate ansible-development
 ```
 
 Next, let's **fork** the Ansible project:
