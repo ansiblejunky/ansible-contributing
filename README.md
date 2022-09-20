@@ -1,6 +1,6 @@
-# Ansible Development
+# Ansible Contributing
 
-Information on developing Ansible modules, plugins and much more.
+Information on contributing to Ansible and related Collections, Roles, Modules and so on.
 
 ## Overview
 
