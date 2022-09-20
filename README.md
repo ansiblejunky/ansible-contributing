@@ -20,10 +20,10 @@ pyenv virtualenv ansible-development
 pyenv activate ansible-development
 ```
 
-Next, let's **fork** the Ansible project:
+Next, follow [these steps](https://jarv.is/notes/how-to-pull-request-fork-github/) to **fork** the repo:
 
 ```shell
-# Fork the Ansible repo via Github: https://github.com/ansible/ansible
+# Fork the via Github: https://github.com/ansible/ansible
 
 # Clone the newly forked repo
 git clone https://github.com/ansiblejunky/ansible
@@ -99,28 +99,11 @@ Ansible conventions offer a predictable user interface across all modules, playb
 
 [Debugging modules](https://docs.ansible.com/ansible/latest/dev_guide/debugging.html)
 
-## Plugins
-
-[Internal - Presentation by Edward Quail](https://mojo.redhat.com/docs/DOC-1168516)
+## Resources
 
 [Developing plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_plugins.html)
 [THE INSIDE PLAYBOOK - HOW TO EXTEND ANSIBLE THROUGH PLUGINS](https://www.ansible.com/blog/how-to-extend-ansible-through-plugins)
-
-## Dynamic inventory
-
-[Developing dynamic inventory](https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html)
-
-## Testing
-
+[Inventory Plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html)
 [Testing Ansible](https://docs.ansible.com/ansible/latest/dev_guide/testing.html)
-
-## Resources
-
-The purpose of this guide is to teach you everything you need to know about being a contributing member of the Ansible community. All types of contributions are welcome, and necessary to Ansible’s continued success.
 [Ansible Community Guide](https://docs.ansible.com/ansible/latest/community/index.html#contributing-code-features-or-bugfixes)
-
-[Embedding and extending Ansible with Python](http://slides.com/alejandroguiraorodriguez/ee-ansible-with-python#/36)
-
 [The Ansible Development Cycle](https://docs.ansible.com/ansible/latest/community/development_process.html)
-
-[Internal - Ansible Module Development: a narrative](https://docs.google.com/document/d/11Ai1KrfNtl9_3yQOSJbqUpVR7G6ANuG1Igr3s6zlj1k/edit#heading=h.tt7bcolhsrid)
