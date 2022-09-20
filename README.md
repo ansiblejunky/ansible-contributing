@@ -4,7 +4,9 @@ Information on contributing to Ansible and related Collections, Roles, Modules a
 
 ## Overview
 
-Note the [Ansible Release Roadmaps](https://docs.ansible.com/ansible/devel/roadmap/) for Ansible if you are intending to fix a bug or add a feature or new module to a specific Ansible version. For general help, use this guide: [Ansible - Developer Guide](https://docs.ansible.com/ansible/latest/dev_guide/index.html)
+General information can be found [here](https://docs.ansible.com/ansible/latest/dev_guide/index.html) for a Developer Guide.
+
+Note the [Ansible Release Roadmaps](https://docs.ansible.com/ansible/devel/roadmap/) for Ansible if you are intending to fix a bug or add a feature or new module to a specific release.
 
 ## Development Environment
 
