@@ -101,9 +101,9 @@ Ansible conventions offer a predictable user interface across all modules, playb
 
 ## Resources
 
-[Developing plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_plugins.html)
-[THE INSIDE PLAYBOOK - HOW TO EXTEND ANSIBLE THROUGH PLUGINS](https://www.ansible.com/blog/how-to-extend-ansible-through-plugins)
-[Inventory Plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html)
-[Testing Ansible](https://docs.ansible.com/ansible/latest/dev_guide/testing.html)
-[Ansible Community Guide](https://docs.ansible.com/ansible/latest/community/index.html#contributing-code-features-or-bugfixes)
-[The Ansible Development Cycle](https://docs.ansible.com/ansible/latest/community/development_process.html)
+- [Developing plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_plugins.html)
+- [THE INSIDE PLAYBOOK - HOW TO EXTEND ANSIBLE THROUGH PLUGINS](https://www.ansible.com/blog/how-to-extend-ansible-through-plugins)
+- [Inventory Plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html)
+- [Testing Ansible](https://docs.ansible.com/ansible/latest/dev_guide/testing.html)
+- [Ansible Community Guide](https://docs.ansible.com/ansible/latest/community/index.html#contributing-code-features-or-bugfixes)
+- [The Ansible Development Cycle](https://docs.ansible.com/ansible/latest/community/development_process.html)
