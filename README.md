@@ -1,10 +1,32 @@
-# Ansible Development
+# Ansible Contributing
 
-Information on developing Ansible modules, plugins and much more.
+Information on contributing to Ansible and related Collections, Roles, Modules and so on.
 
 ## Overview
 
-Note the [Ansible Release Roadmaps](https://docs.ansible.com/ansible/devel/roadmap/) for Ansible if you are intending to fix a bug or add a feature or new module to a specific Ansible version. For general help, use this guide: [Ansible - Developer Guide](https://docs.ansible.com/ansible/latest/dev_guide/index.html)
+General information can be found [here](https://docs.ansible.com/ansible/latest/dev_guide/index.html) for a Developer Guide.
+
+Note the [Ansible Release Roadmaps](https://docs.ansible.com/ansible/devel/roadmap/) for Ansible if you are intending to fix a bug or add a feature or new module to a specific release.
+
+TODO: Current PR for posix plugins
+  https://github.com/ansible-collections/ansible.posix/pull/387
+
+TODO: Contributing to collections
+  https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_contributing.html#contributing-to-a-collection-community-general
+
+TODO: Consider using docker image for development
+  https://kevinquinn.fun/blog/manage-multiple-python-versions-with-docker-an-alternative-to-pyenv/
+
+TODO: Sanity tests
+  https://docs.ansible.com/ansible/devel/dev_guide/testing_sanity.html#how-to-run
+  
+TODO: Note that ansible-test uses containers that use cgroupv1 and docker has deprecated that so use podman
+  Fails: ansible-test sanity --docker -v
+  Works: ansible-test sanity -v
+  https://github.com/ansible/ansible/issues/77903#issuecomment-1137591582
+
+TODO: Generating changelogs and porting guide entries in a collection
+  https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_changelogs.html
 
 ## Development Environment
 
@@ -20,10 +42,10 @@ pyenv virtualenv ansible-development
 pyenv activate ansible-development
 ```
 
-Next, let's **fork** the Ansible project:
+Next, follow [these steps](https://jarv.is/notes/how-to-pull-request-fork-github/) to **fork** the repo:
 
 ```shell
-# Fork the Ansible repo via Github: https://github.com/ansible/ansible
+# Fork the via Github: https://github.com/ansible/ansible
 
 # Clone the newly forked repo
 git clone https://github.com/ansiblejunky/ansible
@@ -99,28 +121,11 @@ Ansible conventions offer a predictable user interface across all modules, playb
 
 [Debugging modules](https://docs.ansible.com/ansible/latest/dev_guide/debugging.html)
 
-## Plugins
-
-[Internal - Presentation by Edward Quail](https://mojo.redhat.com/docs/DOC-1168516)
-
-[Developing plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_plugins.html)
-[THE INSIDE PLAYBOOK - HOW TO EXTEND ANSIBLE THROUGH PLUGINS](https://www.ansible.com/blog/how-to-extend-ansible-through-plugins)
-
-## Dynamic inventory
-
-[Developing dynamic inventory](https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html)
-
-## Testing
-
-[Testing Ansible](https://docs.ansible.com/ansible/latest/dev_guide/testing.html)
-
 ## Resources
 
-The purpose of this guide is to teach you everything you need to know about being a contributing member of the Ansible community. All types of contributions are welcome, and necessary to Ansible’s continued success.
-[Ansible Community Guide](https://docs.ansible.com/ansible/latest/community/index.html#contributing-code-features-or-bugfixes)
-
-[Embedding and extending Ansible with Python](http://slides.com/alejandroguiraorodriguez/ee-ansible-with-python#/36)
-
-[The Ansible Development Cycle](https://docs.ansible.com/ansible/latest/community/development_process.html)
-
-[Internal - Ansible Module Development: a narrative](https://docs.google.com/document/d/11Ai1KrfNtl9_3yQOSJbqUpVR7G6ANuG1Igr3s6zlj1k/edit#heading=h.tt7bcolhsrid)
+- [Developing plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_plugins.html)
+- [THE INSIDE PLAYBOOK - HOW TO EXTEND ANSIBLE THROUGH PLUGINS](https://www.ansible.com/blog/how-to-extend-ansible-through-plugins)
+- [Inventory Plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html)
+- [Testing Ansible](https://docs.ansible.com/ansible/latest/dev_guide/testing.html)
+- [Ansible Community Guide](https://docs.ansible.com/ansible/latest/community/index.html#contributing-code-features-or-bugfixes)
+- [The Ansible Development Cycle](https://docs.ansible.com/ansible/latest/community/development_process.html)
